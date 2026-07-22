@@ -7,9 +7,10 @@ app = Flask(__name__)
 # --- GEMINI SETUP ---
 # REPLACE THIS WITH YOUR REAL AIza... KEY
 
-API_KEY = os.getenv("AIzaSyB4wfebEu8hSD0SHatFWByP21GUcFgaE1E")
-genai.configure(api_key=API_KEY)
+# REPLACE THIS WITH YOUR REAL AIza... KEY
+API_KEY = os.getenv("GEMINI_API_KEY")
 
+genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 # --- ROUTES ---
